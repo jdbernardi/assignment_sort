@@ -60,8 +60,6 @@ end #/. bubble
 
 
 
-
-
 insertion = insert( [ 10, 7, 8, 2, -3, 5, 10 ] )
 bubble = bubble_sort( [ 10, 6, 23, 1, 0, 44, -4, 23 ])
 
