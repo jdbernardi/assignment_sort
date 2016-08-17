@@ -1,3 +1,4 @@
+require 'pry'
 
 def insert( array, right_index = 0 )
 
@@ -28,12 +29,49 @@ def insert( array, right_index = 0 )
 end
 
 
+def bubble_sort( array, swap_count = 1, index = 0 )
+
+    return array if swap_count == 0 || array.length == 1
+    return if array[ index + 1 ].nil?
+
+    swap_count = 0
+    while ( !array[ index + 1 ].nil? )
+
+        left = array[ index ]
+        right = array[ index + 1 ]
+
+        if left > right
+
+            array[ index ] = right
+            array[ index + 1 ] = left
+
+            swap_count += 1
+
+        end
+
+        index += 1
+
+    end
+
+    bubble_sort( array, swap_count )
 
 
-array = insert( [ 10, 7, 8, 2, -3, 5, 10 ] )
+end #/. bubble
 
-print array
+
+
+
+
+insertion = insert( [ 10, 7, 8, 2, -3, 5, 10 ] )
+bubble = bubble_sort( [ 10, 6, 23, 1, 0, 44, -4, 23 ])
+
+puts "INSERTION SORT"
+print insertion
 puts ""
+puts ""
+puts "BUBBLE SORT"
+print bubble
+
 
 
 
