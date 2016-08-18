@@ -1,5 +1,3 @@
-require 'pry'
-
 def merge_sort( array )
 
 	return array if array.count <= 1
