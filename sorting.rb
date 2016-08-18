@@ -1,5 +1,3 @@
-require 'pry'
-
 def insert( array, right_index = 0 )
 
     value = array[ right_index + 1 ]
@@ -18,8 +16,6 @@ def insert( array, right_index = 0 )
 
     end
 
-
-
     array[ i + 1 ] = value
 
     right_index += 1
@@ -27,6 +23,9 @@ def insert( array, right_index = 0 )
     insert( array, right_index )
 
 end
+
+
+
 
 
 def bubble_sort( array, swap_count = 1, index = 0 )
@@ -60,15 +59,7 @@ end #/. bubble
 
 
 
-insertion = insert( [ 10, 7, 8, 2, -3, 5, 10 ] )
-bubble = bubble_sort( [ 10, 6, 23, 1, 0, 44, -4, 23 ])
 
-puts "INSERTION SORT"
-print insertion
-puts ""
-puts ""
-puts "BUBBLE SORT"
-print bubble
 
 
 

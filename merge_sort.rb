@@ -38,8 +38,3 @@ def merge( left, right )
 
 end
 
-
-arr = merge_sort( [ 4, 7, 1, -34, 10, 99, 81, 14, 2, 7 ] )
-print arr
-
-# => [-34, 1, 2, 4, 7, 7, 10, 14, 81, 99]
